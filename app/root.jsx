@@ -1,27 +1,26 @@
 import {
-    Links,
-    Meta,
-    Outlet,
-    Scripts,
-} from "@remix-run/react";
+	Links,
+	LiveReload,
+	Meta,
+	Outlet,
+	Scripts,
+	ScrollRestoration,
+} from '@remix-run/react'
 
 export default function App() {
-    return (
-      <html>
-        <head>
-          <link
-            rel="icon"
-            href="data:image/x-icon;base64,AA"
-          />
-          <Meta />
-          <Links />
-        </head>
-        <body>
-          <h1>Hello world!</h1>
-          <Outlet />
-  
-          <Scripts />
-        </body>
-      </html>
-    );
-  }
+	return (
+		<html>
+			<head>
+				<link rel="icon" href="data:image/x-icon;base64,AA" />
+				<Meta />
+				<Links />
+			</head>
+			<body>
+				<Outlet />
+				<ScrollRestoration />
+				<Scripts />
+				<LiveReload />
+			</body>
+		</html>
+	)
+}
