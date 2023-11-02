@@ -19,3 +19,5 @@ export default function ProductIndex() {
 		</>
 	)
 }
+
+//For Remix, Need to discovery on State Handling, Page Lifecycle Event, Routing
